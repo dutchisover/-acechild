@@ -1,0 +1,12 @@
+@use '../foundation/index' as *;
+
+// コンテンツ幅用の汎用class
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200rem;
+  width: 90%;
+
+  // @include media() {
+  //   width: r(335);
+  // }
+}

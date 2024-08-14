@@ -1,0 +1,80 @@
+@use './setting' as *;
+@use './mixin' as *;
+////////////// CSS変数 //////////////
+
+// 色
+:root {
+  --colorBlack: #222;
+  --colorBg: #fff;
+  --colorCurrent: #c7c7c7;
+  --colorText: #60432e;
+  --colorMain: #ed8934;
+  --colorSub: #ffd86e;
+  --colorKey: #81d1dd;
+  --colorBase: #ffd86e33;
+}
+
+// フォント
+:root {
+  --fontGothic: 'Noto Sans JP', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'MS Pゴシック', 'MS PGothic', sans-serif;
+  --fontMincho: 'Zen Old Mincho', '游明朝体', 'Yu Mincho', YuMincho, 'ヒラギノ明朝 Pro', 'Hiragino Mincho Pro', 'MS P明朝', 'MS PMincho', serif;
+  --fontEnglish: 'Quicksand', sans-serif;
+  --fontMaru: 'Zen Maru Gothic', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'MS Pゴシック', 'MS PGothic', sans-serif;
+}
+
+// ウェイト
+:root {
+  --weightLight: 300;
+  --weightRegular: 400;
+  --weightMedium: 500;
+  --weightBold: 700;
+}
+
+// 標準のフォント設定
+:root {
+  // --fontSize: r(16);
+  --fontSize: #{r(16)};
+  // 標準の文字間
+  --letterSpacing: 0;
+  // 標準の行間
+  --lineHeight: 1.75;
+  // カーニング（font-feature-settings： "palt"）
+  --kerning: unset;
+}
+
+// その他設定
+:root {
+  // bodyの背景色
+  --bodyBg: var(--colorBg);
+  // アニメーション速度
+  --speed: .4s;
+}
+
+
+// html・body のひな形
+%html {
+  font-size: clamp(calc(6.25% * .25), calc(10vw / $board * 10), 6.25%);
+
+  @include media() {
+    font-size: vw(10);
+  }
+}
+
+%body {
+  background-color: var(--bodyBg);
+  // color: var(--colorBlack);
+  color: var(--colorText);
+  letter-spacing: var(--letterSpacing);
+  font-weight: var(--weightRegular);
+  font-size: var(--fontSize);
+  font-family: var(--fontGothic);
+  line-height: var(--lineHeight);
+
+  font-optical-sizing: auto;
+  font-feature-settings: var(--kerning);
+
+  // 行間の上下余白を消す（Figmaの時は不要）
+  // & :where(h1, h2, h3, h4, h5, h6, p) {
+  //   @include lineHeight($line_height);
+  // }
+}

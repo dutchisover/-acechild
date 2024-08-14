@@ -1,0 +1,143 @@
+@use 'sass:math';
+@use './setting' as *;
+
+
+
+
+////////////// Mixin //////////////
+
+
+//メディアクエリ
+$breakpoints: (
+  'def': '(max-width: #{$md}px)',
+  'sm': '(max-width: #{$sm}px)',
+  'md': '(max-width: #{$md}px)',
+  'lg': '(max-width: #{$lg}px)',
+  'xl': '(max-width: #{$xl}px)',
+  'mx': '(max-width: #{$mx}px)',
+  'pc_only': '(min-width: #{$md+1}px)',
+  ) !default;
+
+//コンテンツ幅
+$wrapper: (
+  'sm': #{$sm},
+  'md': #{$md},
+  'lg': #{$lg},
+  'xl': #{$xl},
+  'mx': #{$mx},
+  ) !default;
+
+
+//メディアクエリ
+@mixin media($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// 使用例
+// @include mq() {
+//     color: red;
+// }
+
+
+
+// wrapper自動化
+@mixin cp_wrapper($max: xl, $w: 90%) {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: #{map-get($wrapper, $max)}px;
+  width: $w;
+
+  @include media() {
+    width: 94%;
+  }
+
+  @content;
+}
+
+// 使用例
+// @include cp_wrapper($max: sm);
+
+
+
+
+
+// clamp自動化
+// @function clp($f: 16, $max: mx) {
+//   $mw: #{map-get($wrapper, $max)};
+//   $ft: $f * 1vw;
+//   @return clamp(#{$f * .65}px, calc(#{$ft} / #{$mw} * 90), #{$f}px
+//   );
+// }
+
+:root {
+  // --board: 1280;
+  --board: 1920;
+
+  @include media() {
+    --board: 375;
+  }
+}
+
+// $f = フォントサイズ数、$m = 最小値
+@function r($f: 1, $m: 10) {
+  @return clamp(1px * $m, 10vw / var(--board) * 10 * $f, 1px * $f
+);
+}
+
+// @function r($f: 1) {
+//   @return clamp(.1px * $f, 10vw / var(--board) * 10 * $f, 1px * $f
+//   );
+// }
+
+// 使用例
+// font-size: clp(20);
+
+
+
+
+// vw自動化（スマホ専用）
+@function vw($fontSize: 16, $boardSize: $board-sp) {
+  @return #{math.div($fontSize * 10, $boardSize)}vw;
+}
+
+
+// 使用例
+// font-size: vw(20);
+
+
+
+
+// 行間の上下余白を消しながら line-height を設定する
+$line_height: var(--lineHeight);
+
+@mixin lineHeight($line-height: #{$line_height}) {
+  line-height: #{$line-height};
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    margin-top: calc((1 - #{$line-height}) * .5em); //文字上の余白を消す
+  }
+
+  &::after {
+    margin-bottom: calc((1 - #{$line-height}) * .5em); //文字下の余白を消す
+  }
+}
+
+
+// ホバー
+@mixin hover() {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
