@@ -128,6 +128,22 @@
   }
 }
 
+.mv__text-image {
+  margin-top: 98rem;
+  margin-left: 15rem;
+  width: 435rem;
+
+  @include media() {
+    margin-top: 20rem;
+    margin-left: 0;
+    width: 329rem;
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
 // Scroll
 .top__scroll {
   position: absolute;
@@ -399,6 +415,8 @@
     top: 0;
     left: 60rem;
     display: block;
+    // imgタグで対応のため非表示
+    display: none;
     width: 168rem;
     height: 179rem;
     background-image: url(../../assets/image/image_introduction-title.png);
@@ -414,6 +432,26 @@
       width: 83rem;
       height: 88rem;
     }
+  }
+}
+
+.introduction__list-title-image {
+  position: absolute;
+  top: 0;
+  left: 60rem;
+  width: 168rem;
+  transform: translateY(-50%);
+
+  @include media() {
+    top: 14rem;
+    left: 14rem;
+    max-width: none;
+    width: 83rem;
+    height: 88rem;
+  }
+
+  & img {
+    width: 100%;
   }
 }
 
@@ -627,12 +665,16 @@
     height: 60rem;
   }
 
+  & img {
+    width: 100%;
+  }
+
   & .button__link {
-    padding: 0 30rem 0 60rem;
+    // padding: 0 30rem 0 60rem;
     font-size: r(22);
 
     @include media() {
-      padding: 0 15rem 0 20rem;
+      // padding: 0 15rem 0 20rem;
       font-size: r(16);
     }
 
@@ -1017,11 +1059,14 @@
     height: 60rem;
   }
 
-  & .button__link {
-    padding: 0 30rem 0 60rem;
+  & img {
+    width: 100%;
+  }
 
+  & .button__link {
+    // padding: 0 30rem 0 60rem;
     @include media() {
-      padding: 0 15rem 0 20rem;
+      // padding: 0 15rem 0 20rem;
     }
   }
 }
@@ -1521,7 +1566,7 @@
   background-color: #fff;
 
   @include media() {
-    margin-top: 240rem;
+    margin-top: 220rem;
     padding: 120rem 20rem 26rem 20rem;
     width: 100%;
   }
@@ -1580,47 +1625,54 @@
 
 .coverage__option-copy {
   position: absolute;
-  left: 50%;
-  background-color: var(--colorText);
-  transform: translate(-50%, -50%);
+  // background-color: var(--colorText);
+  // transform: translate(-50%, -50%);
+  top: -90rem;
+  left: 118rem;
+  // left: 50%;
+  width: 900rem;
 
   @include media() {
-    top: -190rem;
+    top: -196rem;
     left: 0;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-    padding-left: 40rem;
+    // padding-top: 10rem;
+    // padding-bottom: 5rem;
+    // padding-left: 40rem;
     width: 100%;
     font-size: r(17);
     transform: none;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50rem;
-    left: -70;
-    display: block;
-    width: 131rem;
-    height: 167rem;
-    background-image: url(../../assets/image/image_coverage-option.png);
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transform: translateY(-50%) translateX(-53%);
-
-    @include media() {
-      top: -15rem;
-      left: 0;
-      width: 75rem;
-      height: 97rem;
-      transform: none;
-    }
+  & img {
+    width: 100%;
   }
 
-  &::after {
-    background-color: var(--colorText);
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 50rem;
+  //   left: -70;
+  //   display: block;
+  //   width: 131rem;
+  //   height: 167rem;
+  //   background-image: url(../../assets/image/image_coverage-option.png);
+  //   background-position: center;
+  //   background-size: 100% 100%;
+  //   background-repeat: no-repeat;
+  //   transform: translateY(-50%) translateX(-53%);
+
+  //   @include media() {
+  //     top: -15rem;
+  //     left: 0;
+  //     width: 75rem;
+  //     height: 97rem;
+  //     transform: none;
+  //   }
+  // }
+
+  // &::after {
+  //   background-color: var(--colorText);
+  // }
 }
 
 .coverage__option-content {
@@ -1677,31 +1729,35 @@
   width: 520rem;
   height: 112rem;
 
+  & img {
+    width: 100%;
+  }
+
   & .button__link {
-    padding: 0 30rem 0 60rem;
+    // padding: 0 30rem 0 60rem;
     font-size: r(22);
 
     @include media() {
-      padding: 0 15rem 0 20rem;
+      // padding: 0 15rem 0 20rem;
       font-size: r(16);
     }
 
-    &::before {
-      width: 16rem;
-      height: 16rem;
+    // &::before {
+    //   width: 16rem;
+    //   height: 16rem;
 
-      @include media() {
-        width: 11rem;
-        height: 11rem;
-      }
-    }
+    //   @include media() {
+    //     width: 11rem;
+    //     height: 11rem;
+    //   }
+    // }
   }
 
-  & + & {
-    & .button__link {
-      background-color: var(--colorKey);
-    }
-  }
+  // & + & {
+  //   & .button__link {
+  //     background-color: var(--colorKey);
+  //   }
+  // }
 }
 
 // =======================================
@@ -1738,13 +1794,17 @@
 .price__table-container {
   overflow: hidden;
   margin-top: 60rem;
-  border: 3px solid var(--colorMain);
-  border-radius: 40rem;
-  background-color: var(--colorMain);
+  // border: 3px solid var(--colorMain);
+  // border-radius: 40rem;
+  // background-color: var(--colorMain);
 
   @include media() {
     margin-top: 30rem;
-    border-radius: 20rem;
+    // border-radius: 20rem;
+  }
+
+  & img {
+    width: 100%;
   }
 }
 

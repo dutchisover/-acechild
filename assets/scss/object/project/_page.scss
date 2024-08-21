@@ -21,7 +21,6 @@
   background-color: #fff7e2;
 
   place-items: center;
-
   @include media() {
     margin: 72rem auto 0;
     width: 335rem;
@@ -154,15 +153,19 @@
 
 .page__button {
   margin: 68rem auto 0;
-  width: 725rem;
-  height: 112rem;
+  width: 726rem;
+  height: 113rem;
 
   @include media() {
     margin-top: 30rem;
   }
 
+  & img {
+    width: 100%;
+  }
+
   & .button__link {
-    background-color: var(--colorKey);
+    // background-color: var(--colorKey);
     font-size: r(22);
 
     @include media() {
@@ -310,7 +313,7 @@ select {
   width: auto;
 
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 .select {
@@ -322,7 +325,6 @@ select {
   vertical-align: middle;
 
   place-items: center;
-
   @include media() {
     height: 55rem;
   }
@@ -669,18 +671,16 @@ th.plan_checked::after {
   transition: opacity .4s;
 
   place-items: center;
-
   @include media() {
     width: 295rem;
     height: 55rem;
   }
-
   @include hover() {
     opacity: .6;
   }
 }
 
-.radiobutton:checked+.radio--plan {
+.radiobutton:checked + .radio--plan {
   background-color: #60432e;
 
   @include hover() {
@@ -702,8 +702,7 @@ th.plan_checked::after {
   grid-column-gap: 40rem;
   grid-row-gap: 40rem;
   grid-template-areas: 'condition01 condition01'
-    'condition02 condition03';
-
+  'condition02 condition03';
   @include media() {
     display: flex;
     flex-direction: column;
@@ -752,7 +751,6 @@ th.plan_checked::after {
   padding: 60rem 0 78rem;
 
   grid-area: condition01;
-
   @include media() {
     padding: 60rem 0 40rem;
   }
@@ -776,7 +774,6 @@ th.plan_checked::after {
   padding: 40rem 47rem 40rem;
 
   grid-area: condition02;
-
   @include media() {
     padding: 60rem 0 40rem;
   }
@@ -851,7 +848,6 @@ th.plan_checked::after {
   padding-bottom: 40rem;
 
   grid-area: condition03;
-
   @include media() {
     padding-top: 60rem;
   }

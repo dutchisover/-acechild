@@ -73,7 +73,7 @@ $wrapper: (
 
 :root {
   // --board: 1280;
-  --board: 1920;
+  --board: 1400;
 
   @include media() {
     --board: 375;
@@ -81,7 +81,7 @@ $wrapper: (
 }
 
 // $f = フォントサイズ数、$m = 最小値
-@function r($f: 1, $m: 10) {
+@function r($f: 1, $m: 12) {
   @return clamp(1px * $m, 10vw / var(--board) * 10 * $f, 1px * $f
 );
 }

@@ -1,4 +1,3 @@
-
 //////////////////// スマホハンバーガーメニューの開閉 ////////////////////
 const NAV_BUTTON = document.querySelector('.header__nav-button');
 const NAV_CLOSEBUTTON = document.querySelector('.header__nav-button__close');
@@ -30,16 +29,15 @@ function NAV_CLOSE() {
 NAV_BUTTON.addEventListener('click', NAV_OPEN);
 NAV_CLOSEBUTTON.addEventListener('click', NAV_CLOSE);
 
-
 ////////////////// スムーススクロールとページ内リンクがクリックされたらスマホメニューを閉じる //////////////////
 const links = document.querySelectorAll('a[href^="#"]');
 
-links.forEach((link) => {
-  link.addEventListener('click', (e) => {
+links.forEach(link => {
+  link.addEventListener('click', e => {
     e.preventDefault();
 
     const href = link.getAttribute('href');
-    if (href === "#" || !href) {
+    if (href === '#' || !href) {
       return; // hrefが空、もしくは単なる「#」の場合、処理を終了
     }
 
@@ -59,9 +57,8 @@ links.forEach((link) => {
 
       window.scrollTo({
         top: target,
-        behavior: 'smooth',
+        behavior: 'smooth'
       });
-
     }
   });
 });
@@ -69,11 +66,10 @@ links.forEach((link) => {
 // ウィンドウのリサイズ時にスクロールを再有効化
 window.addEventListener('resize', enableScroll);
 
-
 ////////// トップへ戻るボタン //////////
 const topButton = document.querySelector('.footer__link-top');
 
-topButton.addEventListener('click', (e) => {
+topButton.addEventListener('click', e => {
   e.preventDefault(); // デフォルトの動作を防止
   window.scrollTo({
     top: 0,
@@ -90,12 +86,13 @@ if (swiperElements.length > 0) {
       loop: true,
       paginationClickable: true,
       speed: 500,
+      // allowTouchMove: false,
 
       pagination: {
         el: swiperElement.querySelector('.swiper-pagination'),
         type: 'bullets',
         clickable: true,
-        renderBullet: function (index, className) {
+        renderBullet: function(index, className) {
           return (
             '<span class="' +
             className +
@@ -110,7 +107,7 @@ if (swiperElements.length > 0) {
 }
 
 ////////// シミュレーションページの責任開始日 //////////
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   // 今日の日付を取得
   const today = new Date();
   // 今日から91日目の日付を計算

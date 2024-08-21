@@ -21,9 +21,7 @@
 	<!-- Web Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
 	<!-- ファビコン -->
 	<link rel="icon" href="./assets/image/favicon.ico">
@@ -60,28 +58,23 @@
 		<div class="header__inner">
 			<div class="header__logo">
 				<a href="./">
-					<img src="./assets/image/logo_header.svg" alt="エースチャイルド こどものための不登校保険 親子のための就学トラブル相談保険"
-						class="header__logo-image" width="434" height="77">
+					<img src="./assets/image/logo_header.svg" alt="エースチャイルド こどものための不登校保険 親子のための就学トラブル相談保険" class="header__logo-image" width="434" height="77">
 				</a>
 			</div>
 
 			<nav class="header__nav">
 				<ul class="header__nav-list">
-					<li class="header__nav-item"><a class="header__nav-link" href="#coverage"
-							data-current="coverage">補償内容</a>
+					<li class="header__nav-item"><a class="header__nav-link" href="#coverage" data-current="coverage">補償内容</a>
 					</li>
 					<li class="header__nav-item"><a class="header__nav-link" href="#price" data-current="price">料金表</a>
 					</li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#coverage"
-							data-current="simulation">お申込み</a>
+					<li class="header__nav-item"><a class="header__nav-link" href="#coverage" data-current="simulation">お申込み</a>
 					</li>
 					<li class="header__nav-item"><a class="header__nav-link" href="#faq" data-current="faq">Q&A</a>
 					</li>
-					<li class="header__nav-item"><a class="header__nav-link" href="#contact"
-							data-current="contact">問い合わせ</a>
+					<li class="header__nav-item"><a class="header__nav-link" href="#contact" data-current="contact">問い合わせ</a>
 					</li>
-					<li class="button__area header__button"><a class="button__link" href="#contact"
-							data-current="contact">問い合わせ</a>
+					<li class="button__area header__button"><a class="button__link" href="#contact" data-current="contact"><span class="sp-none">問い合わせ</span><span class="pc-none">お申込みはこちら！</span></a>
 					</li>
 				</ul>
 			</nav>
@@ -109,8 +102,7 @@
 					<source srcset="./assets/image/photo_mv_sp.webp" media="(max-width: 768px)" type="image/webp">
 					<source srcset="./assets/image/photo_mv_sp.jpg" media="(max-width: 768px)">
 					<source srcset="./assets/image/photo_mv.webp" type="image/webp">
-					<img src="./assets/image/photo_mv.jpg" alt="公立小学校に入学する児童と両親" class="mv__image" width="1392"
-						height="733">
+					<img src="./assets/image/photo_mv.jpg" alt="公立小学校に入学する児童と両親" class="mv__image" width="1392" height="733">
 				</picture>
 
 				<div class="mv__container">
@@ -121,14 +113,20 @@
 								width="522" height="266">
 						</picture>
 					</h1>
-					<p class="mv__copy">月額最大<span>560</span>円！</p>
+					<!-- <p class="mv__copy">月額最大<span>560</span>円！</p>
 					<p class="mv__copy"><span>弁護士保険</span>付き！</p>
-					<p class="mv__text">さらにセキュリティアプリ『Filii』をサービス！</p>
+					<p class="mv__text">さらにセキュリティアプリ『Filii』をサービス！</p> -->
+					<div class="mv__text-image">
+						<picture>
+							<source srcset="./assets/image/text_mv-copy_sp.svg" media="(max-width: 768px)">
+							<img src="./assets/image/text_mv-copy.svg" alt="月額最大560円！弁護士保険付き！さらにセキュリティアプリ『Filii』をサービス！" width="435" height="251">
+						</picture>
+					</div>
 				</div>
-			</div>
-			<!-- Scroll animation -->
-			<div class="top__scroll"><span>scroll</span></div>
 
+				<!-- Scroll animation -->
+				<div class="top__scroll"><span>scroll</span></div>
+			</div>
 		</section>
 		<!-- /.mv -->
 
@@ -145,7 +143,15 @@
 							class="pc-none">サポート</h2>
 					<h3 class="about__text">子どもから「学校に行きたくない」と相談されたとき、家族だけで問題を抱えてしまう必要はありません。<br>
 						学校とも相談いただいた上で問題が解消しない場合、専門の臨床心理士や弁護士への相談費用や、必要なときには転校にかかる費用負担もサポートするための少額短期保険です。</h3>
-					<div class="button__area about__button"><a href="#coverage" class="button__link">補償内容・料金表へ</a></div>
+					<div class="button__area about__button">
+						<a href="#coverage" class="button__link">
+							<!-- 補償内容・料金表へ -->
+							<picture>
+								<source srcset="./assets/image/button_about_sp.svg" media="(max-width: 768px)">
+								<img src="./assets/image/button_about.svg" alt="補償内容・料金表へ" width="560" height="87">
+							</picture>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -157,48 +163,43 @@
 				<div class="introduction__inner wrapper">
 					<div class="introduction__box">
 						<div class="introduction__list">
-							<h2 class="section__balloon introduction__list-title">学校に<br class="pc-none">行きたくない…</h2>
+							<h2 class="section__balloon introduction__list-title">
+								<img class="introduction__list-title-image"
+									src="./assets/image/image_introduction-title.png" alt="不登校を母親父親に相談できず悩む児童">学校に<br
+									class="pc-none">行きたくない…
+							</h2>
 							<div class="introduction__list-item">
 								<picture>
 									<source srcset="./assets/image/image_introduction-item_01.webp" type="image/webp">
-									<img src="./assets/image/image_introduction-item_01.png" alt="小学生のいじめ・暴力・嫌がらせ"
-										class="introduction__list-image" width="550" height="573">
+									<img src="./assets/image/image_introduction-item_01.png" alt="小学生のいじめ・暴力・嫌がらせ" class="introduction__list-image" width="550" height="573">
 								</picture>
 								<p class="introduction__list-text">いじめ？</p>
 							</div>
 							<div class="introduction__list-item">
 								<picture>
 									<source srcset="./assets/image/image_introduction-item_02.webp" type="image/webp">
-									<img src="./assets/image/image_introduction-item_02.png"
-										alt="集団行動が苦手、対人不安・対人緊張を抱える中学生" class="introduction__list-image" width="550"
-										height="573">
+									<img src="./assets/image/image_introduction-item_02.png" alt="集団行動が苦手、対人不安・対人緊張を抱える中学生" class="introduction__list-image" width="550" height="573">
 								</picture>
 								<p class="introduction__list-text">集団生活が苦手？</p>
 							</div>
 							<div class="introduction__list-item">
 								<picture>
 									<source srcset="./assets/image/image_introduction-item_03.webp" type="image/webp">
-									<img src="./assets/image/image_introduction-item_03.png"
-										alt="コミュニケーション・会話・意思疎通が苦手な高校生" class="introduction__list-image" width="550"
-										height="573">
+									<img src="./assets/image/image_introduction-item_03.png" alt="コミュニケーション・会話・意思疎通が苦手な高校生" class="introduction__list-image" width="550" height="573">
 								</picture>
 								<p class="introduction__list-text">雰囲気に馴染めない？</p>
 							</div>
 							<div class="introduction__list-item">
 								<picture>
 									<source srcset="./assets/image/image_introduction-item_04.webp" type="image/webp">
-									<img src="./assets/image/image_introduction-item_04.png"
-										alt="学業成績不振・受験勉強や授業についていけない" class="introduction__list-image" width="550"
-										height="573">
+									<img src="./assets/image/image_introduction-item_04.png" alt="学業成績不振・受験勉強や授業についていけない" class="introduction__list-image" width="550" height="573">
 								</picture>
 								<p class="introduction__list-text">勉強が苦手？</p>
 							</div>
 							<div class="introduction__list-item">
 								<picture>
 									<source srcset="./assets/image/image_introduction-item_05.webp" type="image/webp">
-									<img src="./assets/image/image_introduction-item_05.png"
-										alt="友達友人関係トラブル・喧嘩する特別支援学校児童" class="introduction__list-image" width="550"
-										height="573">
+									<img src="./assets/image/image_introduction-item_05.png" alt="友達友人関係トラブル・喧嘩する特別支援学校児童" class="introduction__list-image" width="550" height="573">
 								</picture>
 								<p class="introduction__list-text">きらわれてる？</p>
 							</div>
@@ -217,11 +218,8 @@
 					</div>
 					<h4>
 						<picture>
-							<source srcset="./assets/image/text_introduction_sp.webp" media="(max-width: 768px)"
-								type="image/webp">
-							<source srcset="./assets/image/text_introduction_sp.png" media="(max-width: 768px)">
-							<source srcset="./assets/image/text_introduction.webp" type="image/webp">
-							<img src="./assets/image/text_introduction.png" alt="学校の先生には相談しづらい/相談しても解決しなかった…"
+							<source srcset="./assets/image/text_introduction_sp.svg" media="(max-width: 768px)">
+							<img src="./assets/image/text_introduction.svg" alt="学校の先生には相談しづらい/相談しても解決しなかった…"
 								class="introduction__image" width="954" height="334">
 						</picture>
 					</h4>
@@ -236,7 +234,14 @@
 				<h4 class="introduction__copy pc-none">そんなときに<br>
 					<span>こどものための</span><br><span>不登校保険！</span>
 				</h4>
-				<div class="button__area introduction__button"><a href="#coverage" class="button__link">補償内容・料金表へ</a>
+				<div class="button__area introduction__button">
+					<a href="#coverage" class="button__link">
+						<!-- 補償内容・料金表へ -->
+						<picture>
+							<source srcset="./assets/image/button_introduction_sp.svg" media="(max-width: 768px)">
+							<img src="./assets/image/button_introduction.svg" alt="補償内容・料金表へ" width="726" height="113">
+						</picture>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -251,15 +256,15 @@
 						<h2 class="section__title data__title">不登校生徒数の<br class="pc-none">推移</h2>
 						<div class="data__container">
 							<h3 class="data__image">
-								<img src="./assets/image/image_data_01.png"
+								<img src="./assets/image/image_data_01.svg"
 									alt="不登校生徒の割合(令和3年度) 小中高の不登校生徒数の推移横軸＝年度／縦、＝人数、折れ線グラフ2004〜2021年">
 							</h3>
 
 							<div class="data__content">
 								<h4>
 									<picture>
-										<source srcset="./assets/image/text_data_01_sp.png" media="(max-width: 768px)">
-										<img src="./assets/image/text_data_01.png"
+										<source srcset="./assets/image/text_data_01_sp.svg" media="(max-width: 768px)">
+										<img src="./assets/image/text_data_01.svg"
 											alt="小学校：1.3% 在籍6,262,256人／不登校81,498 中学校：5% 在籍3,266,896人／不登校163,442人 高等学校：1.7％ 在籍3,014,194人／不登校50,985人">
 									</picture>
 								</h4>
@@ -284,38 +289,20 @@
 										<!-- Slides -->
 										<div class="swiper-slide">
 											<picture>
-												<source srcset="./assets/image/image_data_02_sp-elementaryschool.webp"
-													media="(max-width: 768px)" type="image/webp">
-												<source srcset="./assets/image/image_data_02-elementaryschool.webp"
-													type="image/webp">
-												<source srcset="./assets/image/image_data_02_sp-elementaryschool.jpg"
-													media="(max-width: 768px)">
-												<img src="./assets/image/image_data_02-elementaryschool.jpg"
-													alt="小学生 不登校の理由" width="1114" height="1012">
+												<source srcset="./assets/image/image_data_02-elementaryschool_sp.svg" media="(max-width: 768px)">
+												<img src="./assets/image/image_data_02-elementaryschool.svg" alt="小学生 不登校の理由" width="1114" height="1012">
 											</picture>
 										</div>
 										<div class="swiper-slide">
 											<picture>
-												<source srcset="./assets/image/image_data_02_sp-middleschool.webp"
-													media="(max-width: 768px)" type="image/webp">
-												<source srcset="./assets/image/image_data_02-middleschool.webp"
-													type="image/webp">
-												<source srcset="./assets/image/image_data_02_sp-middleschool.jpg"
-													media="(max-width: 768px)">
-												<img src="./assets/image/image_data_02-middleschool.jpg"
-													alt="中学生 不登校の理由" width="1114" height="1012">
+												<source srcset="./assets/image/image_data_02-middleschool_sp.svg" media="(max-width: 768px)">
+												<img src="./assets/image/image_data_02-middleschool.svg" alt="中学生 不登校の理由" width="1114" height="1012">
 											</picture>
 										</div>
 										<div class="swiper-slide">
 											<picture>
-												<source srcset="./assets/image/image_data_02_sp-highschool.webp"
-													media="(max-width: 768px)" type="image/webp">
-												<source srcset="./assets/image/image_data_02-highschool.webp"
-													type="image/webp">
-												<source srcset="./assets/image/image_data_02_sp-highschool.jpg"
-													media="(max-width: 768px)">
-												<img src="./assets/image/image_data_02-highschool.jpg" alt="高校生 不登校の理由"
-													width="1114" height="1012">
+												<source srcset="./assets/image/image_data_02-highschool_sp.svg" media="(max-width: 768px)">
+												<img src="./assets/image/image_data_02-highschool.svg" alt="高校生 不登校の理由" width="1114" height="1012">
 											</picture>
 										</div>
 
@@ -347,16 +334,21 @@
 							<h3 class="data__text">いじめの認知件数は年々増えていまずが、<br>
 								残念ながら全てが明るみに出ているわけではありません。</h3>
 							<div class="data__image">
-								<img src="./assets/image/image_data_03.png"
-									alt="小中高それぞれ認知件数を年度毎の機・棒グラフに。1年度毎で小中高はまとめる（棒3本が1年度の部分にまとまる）横軸＝年度／縦軸＝人数2004~2021年">
+								<img src="./assets/image/image_data_03.svg" alt="小中高それぞれ認知件数を年度毎の機・棒グラフに。1年度毎で小中高はまとめる（棒3本が1年度の部分にまとまる）横軸＝年度／縦軸＝人数2004~2021年">
 							</div>
 							<h3 class="data__text">こどもがいじめられていることを黙っていたら？<br class="sp-none">
 								こどもからの自己申告だけでは、SOSに気づけないかも。</h3>
 							<h4 class="data__caption">
 								引用：https://www.mext.go.jp/content/20221021-mxt_jidou02-100002753_1.pdf</h4>
 
-							<div class="button__area data__button"><a href="#coverage"
-									class="button__link">補償内容・料金表へ</a>
+							<div class="button__area data__button">
+								<a href="#coverage" class="button__link">
+									<!-- 補償内容・料金表へ -->
+									<picture>
+										<source srcset="./assets/image/button_data_sp.svg" media="(max-width: 768px)">
+										<img src="./assets/image/button_data.svg" alt="補償内容・料金表へ" width="665" height="87">
+									</picture>
+								</a>
 							</div>
 						</div>
 
@@ -377,8 +369,7 @@
 					<div class="diagnosis__photo">
 						<picture>
 							<source srcset="./assets/image/photo_diagnosis.webp" type="image/webp">
-							<img src="./assets/image/photo_diagnosis.jpg" alt="" class="diagnosis__image" width="670"
-								height="867">
+							<img src="./assets/image/photo_diagnosis.jpg" alt="" class="diagnosis__image" width="670" height="867">
 						</picture>
 					</div>
 					<h3 class="diagnosis__text">医師から発達障害の<br class="pc-none">診断・診察を<br class="sp-none">受けている<br
@@ -394,12 +385,12 @@
 						<div class="diagnosis__box-content">
 							<h4 class="diagnosis__note">低年齢の時期に問題となることが多く、小学校低学年では<br>
 								グレーゾーンも含めると10人に1人程度が該当する状態を示します。</h4>
-							<p class="diagnosis__note">発達障害の診断やカウンセリングは、主に児童精神科や<br>
-								小児神経科で受けることができます。</p>
+							<h4 class="diagnosis__note">発達障害の診断やカウンセリングは、主に児童精神科や<br>
+								小児神経科で受けることができます。</h4>
 
-							<p class="diagnosis__quote">
+							<h5 class="diagnosis__quote">
 								引用：https://www.mext.go.jp/b_menu/houdou/2022/1421569_00005.htm
-							</p>
+							</h5>
 						</div>
 
 						<div class="diagnosis__list">
@@ -429,8 +420,7 @@
 						<div class="coverage__photo">
 							<picture>
 								<source srcset="./assets/image/photo_coverage-item_01.webp" type="image/webp">
-								<img src="./assets/image/photo_coverage-item_01.jpg" alt="臨床心理士と相談している不登校児童"
-									class="coverage-item__image" width="580" height="440">
+								<img src="./assets/image/photo_coverage-item_01.jpg" alt="臨床心理士と相談している不登校児童" class="coverage-item__image" width="580" height="440">
 							</picture>
 						</div>
 						<div class="coverage__content">
@@ -445,8 +435,7 @@
 						<div class="coverage__photo">
 							<picture>
 								<source srcset="./assets/image/photo_coverage-item_02.webp" type="image/webp">
-								<img src="./assets/image/photo_coverage-item_02.jpg" alt="転校費用補償"
-									class="coverage-item__image" width="580" height="440">
+								<img src="./assets/image/photo_coverage-item_02.jpg" alt="転校費用補償" class="coverage-item__image" width="580" height="440">
 							</picture>
 						</div>
 						<div class="coverage__content">
@@ -457,8 +446,7 @@
 							<div class="coverage__content-illust">
 								<picture>
 									<source srcset="./assets/image/image_coverage-item.webp" type="image/webp">
-									<img src="./assets/image/image_coverage-item.png" alt=""
-										class="coverage-item__image" width="184" height="234">
+									<img src="./assets/image/image_coverage-item.png" alt="" class="coverage-item__image" width="184" height="234">
 								</picture>
 							</div>
 						</div>
@@ -469,20 +457,14 @@
 							委任の費用補償</h3>
 						<div class="coverage__subtitle-illust">
 							<picture>
-								<source srcset="./assets/image/text_coverage-subtitle_sp.webp" type="image/webp"
-									media="(max-width: 768px)">
-								<source srcset="./assets/image/text_coverage-subtitle_sp.png"
-									media="(max-width: 768px)">
-								<source srcset="./assets/image/text_coverage-subtitle.webp" type="image/webp">
-								<img src="./assets/image/text_coverage-subtitle.png" alt="弁護士保険も付けられます！"
-									class="coverage-subtitle__image" width="271" height="119">
+								<source srcset="./assets/image/text_coverage-subtitle_sp.svg" media="(max-width: 768px)">
+								<img src="./assets/image/text_coverage-subtitle.svg" alt="弁護士保険も付けられます！" class="coverage-subtitle__image" width="271" height="119">
 							</picture>
 						</div>
 						<div class="coverage__photo">
 							<picture>
 								<source srcset="./assets/image/photo_coverage-item_03.webp" type="image/webp">
-								<img src="./assets/image/photo_coverage-item_03.jpg" alt="弁護士相談／委任の費用補償"
-									class="coverage-item__image" width="580" height="440">
+								<img src="./assets/image/photo_coverage-item_03.jpg" alt="弁護士相談／委任の費用補償" class="coverage-item__image" width="580" height="440">
 							</picture>
 						</div>
 						<div class="coverage__content">
@@ -496,7 +478,14 @@
 					</li>
 				</ul>
 				<div class="coverage__option">
-					<p class="section__balloon coverage__option-copy">さらに！お申し込みの方<br class="pc-none">全員にサービス！</p>
+					<!-- <p class="section__balloon coverage__option-copy">さらに！お申し込みの方<br class="pc-none">全員にサービス！</p> -->
+					<p class="coverage__option-copy">
+						<picture>
+							<source srcset="./assets/image/text_coverage-copy_sp.svg" media="(max-width: 768px)">
+							<img src="./assets/image/text_coverage-copy.svg" alt="さらに！お申し込みの方全員にサービス！"
+								class="coverage-copy__image" width="901" height="169">
+						</picture>
+					</p>
 					<div class="coverage__option-content">
 						<p class="coverage__label">option</p>
 						<h3 class="coverage__subtitle">こどものスマホ<br>セキュリティアプリ
@@ -510,15 +499,28 @@
 					<div class="coverage__option-photo">
 						<picture>
 							<source srcset="./assets/image/photo_coverage-option.webp" type="image/webp">
-							<img src="./assets/image/photo_coverage-option.jpg" alt="こどものスマホセキュリティアプリ Filii"
-								class="coverage-option__image" width="454" height="288">
+							<img src="./assets/image/photo_coverage-option.jpg" alt="こどものスマホセキュリティアプリ Filii" class="coverage-option__image" width="454" height="288">
 						</picture>
 					</div>
 					<div class="coverage__option-button">
-						<div class="button__area coverage__button"><a href="./condition.html"
-								class="button__link">保険の適用条件について</a></div>
-						<div class="button__area coverage__button"><a href="./simulation.html" class="button__link"
-								target="_blank" rel="noopener noreferrer">お申込みはこちら！</a></div>
+						<div class="button__area coverage__button">
+							<a href="./condition.html" class="button__link">
+								<!-- 保険の適用条件について -->
+								<picture>
+									<source srcset="./assets/image/button_coverage-condition_sp.svg" media="(max-width: 768px)">
+									<img src="./assets/image/button_coverage-condition.svg" alt="保険の適用条件について" width="520" height="113">
+								</picture>
+							</a>
+						</div>
+						<div class="button__area coverage__button">
+							<a href="./simulation.html" class="button__link" target="_blank" rel="noopener noreferrer">
+								<!-- お申込みはこちら！ -->
+								<picture>
+									<source srcset="./assets/image/button_coverage-simulation_sp.svg" media="(max-width: 768px)">
+									<img src="./assets/image/button_coverage-simulation.svg" alt="お申込みはこちら！" width="520" height="113">
+								</picture>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -532,7 +534,7 @@
 				<h2 class="section__title">料金表<span>（月払）</span></h2>
 
 				<div class="price__table-container">
-					<table class="price__table">
+					<!-- <table class="price__table">
 						<thead>
 							<tr>
 								<th></th>
@@ -577,20 +579,22 @@
 								<td class="price__table-price bg-color">２２０<span>円</span></td>
 							</tr>
 						</tbody>
-					</table>
-
+					</table> -->
+					<picture>
+						<!-- <source srcset="./assets/image/image_price_graph_sp.webp" type="image/webp"
+							media="(max-width: 768px)"> -->
+						<source srcset="./assets/image/image_price_graph_sp.svg" media="(max-width: 768px)">
+						<!-- <source srcset="./assets/image/image_price_graph.webp" type="image/webp"> -->
+						<img src="./assets/image/image_price_graph.svg" alt="対人トラブル_弁護士セット_プラン料金比較_小学校中学校高等学校" width="520" height="113">
+					</picture>
 				</div>
 			</div>
 			<div class="price__bottom">
 				<div class="price__bottom-container">
 					<div class="price__bottom-image--first">
 						<picture>
-							<source srcset="./assets/image/text_price-bottom_01_sp.webp" media="(max-width: 768px)"
-								type="image/webp">
-							<source srcset="./assets/image/text_price-bottom_01_sp.png" media="(max-width: 768px)">
-							<source srcset="./assets/image/text_price-bottom_01.webp" type="image/webp">
-							<img src="./assets/image/text_price-bottom_01.png" alt="手軽に始められる！"
-								class="price__bottom-image" width="332" height="204">
+							<source srcset="./assets/image/text_price-bottom_01_sp.svg" media="(max-width: 768px)">
+							<img src="./assets/image/text_price-bottom_01.svg" alt="手軽に始められる！" class="price__bottom-image" width="332" height="204">
 						</picture>
 					</div>
 					<div class="price__bottom-content">
@@ -600,17 +604,20 @@
 					</div>
 					<div class="price__bottom-image--second">
 						<picture>
-							<source srcset="./assets/image/text_price-bottom_02_sp.webp" media="(max-width: 768px)"
-								type="image/webp">
-							<source srcset="./assets/image/text_price-bottom_02_sp.png" media="(max-width: 768px)">
-							<source srcset="./assets/image/text_price-bottom_02.webp" type="image/webp">
-							<img src="./assets/image/text_price-bottom_02.png" alt="シンプルでわかりやすいね！"
-								class="price__bottom-image" width="354" height="200">
+							<source srcset="./assets/image/text_price-bottom_02_sp.svg" media="(max-width: 768px)">
+							<img src="./assets/image/text_price-bottom_02.svg" alt="シンプルでわかりやすいね！" class="price__bottom-image" width="354" height="200">
 						</picture>
 					</div>
 				</div>
-				<div class="button__area"><a href="./simulation.html" class="button__link" target="_blank"
-						rel="noopener noreferrer">お申込みはこちら！</a></div>
+				<div class="button__area">
+					<a href="./simulation.html" class="button__link" target="_blank" rel="noopener noreferrer">
+						<!-- お申込みはこちら！ -->
+						<picture>
+							<source srcset="./assets/image/button_price_sp.svg" media="(max-width: 768px)">
+							<img src="./assets/image/button_price.svg" alt="お申込みはこちら！" width="726" height="113">
+						</picture>
+					</a>
+				</div>
 			</div>
 
 
@@ -657,16 +664,14 @@
 			<a class="footer__link-top" href="#top">
 				<picture>
 					<source srcset="./assets/image/image_footer-button_sp.svg" media="(max-width: 768px)">
-					<img src="./assets/image/image_footer-button.svg" alt="上部へ戻る" class="footer-link__image" width="80"
-						height="80">
+					<img src="./assets/image/image_footer-button.svg" alt="上部へ戻る" class="footer-link__image" width="80" height="80">
 				</picture>
 			</a>
 			<div class="footer__logo">
 				<a href="./">
 					<picture>
 						<source srcset="./assets/image/logo_footer_sp.svg" media="(max-width: 768px)">
-						<img src="./assets/image/logo_footer.svg" alt="エースチャイルド こどものための不登校保険 親子のための就学トラブル相談保険"
-							width="605" height="93">
+						<img src="./assets/image/logo_footer.svg" alt="エースチャイルド こどものための不登校保険 親子のための就学トラブル相談保険" width="605" height="93">
 					</picture>
 				</a>
 			</div>
@@ -687,41 +692,34 @@
 				<div class="footer__content">
 					<div class="footer__nav">
 						<ul class="footer__nav-list">
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#coverage"
-									data-current="coverage">補償内容</a>
+							<li class="footer__nav-item"><a class="footer__nav-link" href="#coverage" data-current="coverage">補償内容</a>
 							</li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#price"
-									data-current="price">料金表</a>
+							<li class="footer__nav-item"><a class="footer__nav-link" href="#price" data-current="price">料金表</a>
 							</li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#coverage"
-									data-current="">お申込み</a>
+							<li class="footer__nav-item"><a class="footer__nav-link" href="#coverage" data-current="">お申込み</a>
 							</li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#faq"
-									data-current="faq">Q&A</a>
+							<li class="footer__nav-item"><a class="footer__nav-link" href="#faq" data-current="faq">Q&A</a>
 							</li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#contact"
-									data-current="">問い合わせ</a>
+							<li class="footer__nav-item"><a class="footer__nav-link" href="#contact" data-current="">問い合わせ</a>
 							</li>
 						</ul>
 					</div>
 
 					<h3 class="footer__content-agency">募集代理店<br>
 						エースチャイルド株式会社</h3>
-					<a class="footer__content-link" href="https://www.as-child.com/contact/" target="_blank"
-						rel="noopener noreferrer">https://www.as-child.com/contact/</a>
-					<p class="footer__content-text">090-4620-6115</p>
-					<p class="footer__content-text">平日9:00～17:00（年末年始を除く）</p>
+					<h3><a class="footer__content-link" href="https://www.as-child.com/contact/" target="_blank"
+							rel="noopener noreferrer">https://www.as-child.com/contact/</a></h3>
+					<h3 class="footer__content-text">090-4620-6115</h3>
+					<h3 class="footer__content-text">平日9:00～17:00（年末年始を除く）</h3>
 					<h4 class="footer__content-link link-privacy">
 						<a href="https://www.as-child.com/privacy" target="_blank"
 							rel="noopener noreferrer">プライバシーポリシー</a>
 					</h4>
 					<div class="footer__content-sns">
-						<a class="footer__content-sns--x" href="https://twitter.com/AsChild_Japan" target="_blank"
-							rel="noopener noreferrer">
+						<a class="footer__content-sns--x" href="https://twitter.com/AsChild_Japan" target="_blank" rel="noopener noreferrer">
 							<img src=" ./assets/image/icon_x.svg" alt="エースチャイルド株式会社 X">
 						</a>
-						<a class="footer__content-sns--facebook" href="https://www.facebook.com/AsChild.Inc"
-							target="_blank" rel="noopener noreferrer">
+						<a class="footer__content-sns--facebook" href="https://www.facebook.com/AsChild.Inc" target="_blank" rel="noopener noreferrer">
 							<img src="./assets/image/icon_facebook.svg" alt="エースチャイルド株式会社 facebook">
 						</a>
 					</div>

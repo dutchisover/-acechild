@@ -102,10 +102,10 @@
 		<!-- page__header -->
 		<section class="page__header">
 			<div class="page__title-area">
-				<div class="page__title">
+				<h1 class="page__title">
 					<span>こどものための不登校保険</span><br>料金シミュレーション
 
-				</div>
+				</h1>
 			</div>
 			<ul class="page__breadcrumb wrapper">
 				<li><a href="./">home</a></li>
@@ -115,11 +115,11 @@
 		<!-- /.page__header -->
 
 		<section class="page__section page__simulation">
-			<h2 class="section__balloon">料金シミュレーション</h2>
+			<p class="section__balloon">料金シミュレーション</p>
 			<div class="page__inner wrapper">
 				<div class="simulation__container">
-					<p class="page__text">月々の保険料算出に必要な項目をご入力ください。</p>
-					<p class="simulation__text">※項目入力後にお申込みいただくことが<br class="pc-none">可能となります。</p>
+					<h2 class="page__text">月々の保険料算出に必要な項目をご入力ください。</h2>
+					<h2 class="simulation__text">※項目入力後にお申込みいただくことが<br class="pc-none">可能となります。</h2>
 					<!-- <form id="inputform" action="https://futoukou-ins.com/simulation.php#plan" method="post"> -->
 					<form>
 						<div class="simulation__birthday">
@@ -300,7 +300,16 @@
 				</div>
 			</div>
 			<div class="button__area page__button">
-				<a href="./" class="button__link">お申込みはこちら！</a>
+				<a href="./" class="button__link">
+					<!-- お申込みはこちら！ -->
+					<picture>
+						<source srcset="./assets/image/button_simulation_sp.webp" type="image/webp"
+							media="(max-width: 768px)">
+						<source srcset="./assets/image/button_simulation_sp.png" media="(max-width: 768px)">
+						<source srcset="./assets/image/button_simulation.webp" type="image/webp">
+						<img src="./assets/image/button_simulation.png" alt="お申込みはこちら！" width="726" height="113">
+					</picture>
+				</a>
 			</div>
 		</section>
 

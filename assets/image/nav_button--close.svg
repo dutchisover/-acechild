@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
-  <g id="グループ_408719" data-name="グループ 408719" transform="translate(-1361 -11)">
-    <rect id="長方形_48956" data-name="長方形 48956" width="42" height="42" rx="21" transform="translate(1361 11)" fill="#ed8934"/>
-    <g id="グループ_404863" data-name="グループ 404863" transform="translate(1372.332 25)">
-      <rect id="長方形_48953" data-name="長方形 48953" width="20" height="2" rx="1" transform="translate(-0.332)" fill="#fff"/>
-      <rect id="長方形_48954" data-name="長方形 48954" width="20" height="2" rx="1" transform="translate(-0.332 6)" fill="#fff"/>
-      <rect id="長方形_48955" data-name="長方形 48955" width="20" height="2" rx="1" transform="translate(-0.332 12)" fill="#fff"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g transform="translate(-1361 -11)"><rect width="42" height="42" rx="21" transform="translate(1361 11)" fill="#ed8934"/><g transform="translate(1380.114 20.214) rotate(45)"><rect width="20" height="2" rx="1" transform="translate(-0.332 6)" fill="#fff"/></g><g transform="translate(1389.778 25.636) rotate(135)"><g transform="translate(0 0)"><rect width="20" height="2" rx="1" transform="translate(0 0)" fill="#fff"/></g></g></g></svg>
